@@ -1,0 +1,92 @@
+body {
+    width: 75%;
+    margin: 0px auto;
+}
+
+.container h1 {
+    font-weight: bold;
+}
+
+/*--------------------------*/
+/*-- Animated/Overlay Backgrounds --*/
+.Linear-Gradient-BG {
+    background: linear-gradient(-45deg, rgb(238, 119, 82, .85), rgb(231, 60, 126, .85), rgb(35, 166, 213, .85), rgb(35, 213, 171, .85));
+    animation: change 10s ease-in-out infinite;
+    background-size: 400% 400%;
+    /* z-index: 1; */
+}
+
+@keyframes change {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+/*-- Animated Backgrounds --*/
+/*--------------------------*/
+
+/*--------------*/
+/*-- Home/Nav --*/
+.Home-Nav {
+    height: 100px;
+    width: 100%;
+}
+
+.Home-Nav nav {
+    height: 100%;
+    font-family: 'Julius Sans One', Sans-Serif;
+    background: unset !important;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.fa-address-book-o {
+    margin-left: 50px;
+    margin-top: 20px;
+    font-size: 60px;
+}
+
+.Nav-Title {
+    margin-top: 20px;
+    font-size: 60px;
+}
+
+.Nav-Link {
+    margin-right: 50px;
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.Home-Box {
+    margin: 50px;
+    Font-Family: 'Monda', Sans-Serif;
+}
+
+.Home-Info {
+    margin: 50px;
+}
+
+.Survey-Btn {
+    width: 100%;
+    font-size: 35px;
+}
+
+/*-- Home/Nav --*/
+/*--------------*/
+
+button {
+    color: white;
+    background-color: unset !important;
+    font-family: 'Julius Sans One', Sans-Serif !important;
+    border-radius: 5px;
+    border: 0.5px solid;
+}
