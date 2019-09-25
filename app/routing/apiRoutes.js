@@ -31,11 +31,13 @@ module.exports = function (app) {
             }
         }
 
-        //return bestMatch data
-        var bff = friendsArray[bestMatch];
-        res.json(bff);
 
         //pushes new submission into the friendsList array
         friendsArray.push(req.body);
+        //return bestMatch data
+
+        var bff = friendsArray[bestMatch];
+        res.json(bff);
+
     });
 };
