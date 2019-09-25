@@ -15,6 +15,10 @@ app.use(bodyParser.json({
     type: 'application/vnd.api+json'
 }));
 
+// Serve some stuff
+app.use(express.static(path.join(__dirname, '/app/public')))
+
+
 //ROUTER
 require('./app/routing/apiRoutes.js')(app);
 require('./app/routing/htmlRoutes.js')(app);
